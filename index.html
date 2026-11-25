@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dümen Games ekibini ve projelerimizi keşfedin.">
+    <meta name="description" content="Dümen Studios ekibini ve projelerimizi keşfedin.">
 
-    <title>Dümen Games | Ekibimiz ve Projelerimiz</title>
+    <title>Dümen Studios | Ekibimiz ve Projelerimiz</title>
 
     <link rel="stylesheet" href="css/Style.css">
     <script src="index.js" defer></script>
@@ -20,7 +20,7 @@
 <header class="site-header">
     <a class="logo" href="#anasayfa">
         <img class="logo-image" src="assets/DumenGames.png" alt="">
-        <span>Dümen Games</span>
+        <span>Dümen Studios</span>
     </a>
 
     <nav aria-label="Ana Menü">
@@ -32,13 +32,45 @@
 </header>
         <main class="page-content" id="main-content">
             <section class="hero" id="anasayfa">
-                <p class="eyebrow">Bağımsız oyun geliştirme ekibi</p>
-                <h1>Fikirleri oynanabilir dünyalara dönüştürüyoruz.</h1>
-                <p>
-                    Biz Dümen Games ekibiyiz. Oyun fikirleri geliştiriyor,
-                    birlikte üretiyor ve projelerimizi paylaşıyoruz.
-                </p>
-                <a class="button" href="#projeler">Projelerimizi keşfet</a>
+                <article class="hero-slide">
+                    <img class="hero-image"
+                         src="assets/OneMoreDoor.jpg"
+                         alt="One More Door oyununun kapak görseli">
+                    <div class="hero-content">
+                        <p class="eyebrow">Dümen Studios sunar</p>
+                        <h1>One More Door</h1>
+                        <p>Kapıların ardındaki dünyayı keşfet.</p>
+                        <a class="button" href="#one-more-door">Projeyi keşfet</a>
+                    </div>
+                </article>
+                <article class="hero-slide">
+                    <img class="hero-image"
+                         src="assets/LabirentGame.jpg" alt="Labirent Game oyununun kapak görseli">
+                    <div class="hero-content">
+                        <p class="eyebrow">Yakında</p>
+                        <h1>Labirent Game</h1>
+                        <p>Labirentte yolunu bul ve maceraya katıl.</p>
+                        <a class="button" href="#labirent-game">Projeyi keşfet</a>
+                    </div>
+                </article>
+
+                <button class="hero-arrow hero-arrow--previous" type="button" aria-label="Önceki oyun">&#10094;</button>
+
+                <button class="hero-arrow hero-arrow--next" type="button" aria-label="Sonraki oyun">
+                    &#10095;
+                </button>
+
+                <div class="hero-pagination" aria-label="Oyun seçimi">
+                    <button
+                        class="hero-dot is-active"
+                        type="button"
+                        data-slide="1"
+                        aria-label="Labirent Game görselini göster"
+                        aria-pressed="false"
+                        ></button>
+                </div>
+
+                <p class="slide-status" aria-live="polite">1 / 2</p>
             </section>
 
             <section id="ekibimiz">
@@ -98,7 +130,7 @@
                 <p>Üzerinde çalıştığımız ve tamamladığımız projeler.</p>
 
                 <div class="project-list">
-                    <article class="project-card">
+                    <article class="project-card" id="one-more-door">
                         <img class="project-image" src="assets/OneMoreDoor.jpg" alt="Korku oyunumuzun kapak görseli.">
                         <p class="project-status">Geliştiriliyor</p>
                         <h3>One More Door</h3>
@@ -108,7 +140,7 @@
                         <p>Kısa proje açıklamasını buraya yazacağız.</p>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card" id="labirent-game">
                         <img class="project-image" src="assets/LabirentGame.jpg" alt="Labirent oyunumuzun kapak görseli.">
                         <p class="project-status">Yakında</p>
                         <h3>Labirent Game</h3>
@@ -131,7 +163,7 @@
             </section>
 
                 <footer class="site-footer">
-                    <p>&copy; 2026 Dümen Games</p>
+                    <p>&copy; 2026 Dümen Studios</p>
                 </footer>
         </main>
 
